@@ -1,0 +1,75 @@
+body {
+	background-color: #fff8dc;
+}
+
+ul {
+	list-style: none;
+	margin-top: 0px;	
+}
+
+li {
+	
+	margin: 1px;
+	margin-left: 360px;
+	padding: 5px;
+	max-width: 392px;
+	border:1px solid black;
+	border-radius: 10px;
+	position: relative;
+	max-height: 200px;
+	
+
+}
+
+.todo_class {
+	margin:  50px 0 0 400px;
+}
+
+input[type="text"] {
+	min-width: 400px;
+	min-height: 30px;
+	border-radius: 10px;	
+}
+
+input[type="button"] {
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #a9a9a9;
+	padding: 10px;	
+}
+
+li:hover {
+	border: 1px solid red;	
+}
+
+.removeicon {
+	
+	background: url(pic/cross_icon.gif);
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	float: right;
+}
+
+.completeicon {
+	
+	background: url(pic/gal.png);
+	width: 16px;
+	height: 16px;		
+	cursor: pointer;
+	float: left;
+}
+
+.hidden {
+	display: none;
+}
+
+h1 {
+	color: red;
+	opacity: 0.5;
+	font-size: 50px;
+}
+
+header {
+	margin:5% 0 0 30%; 
+}

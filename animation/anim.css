@@ -1,0 +1,59 @@
+body {
+	background-color: #333333;
+	overflow: hidden;
+}
+
+input[type="button"] {
+
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+ 
+ul {
+	
+	width: 300px;
+	margin: 50px 0 0 1000px;
+	-webkit-transform: translateZ(0);
+	box-sizing: border-box;
+	
+	
+}
+
+li {
+	max-width: 300px;
+	color: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin:10px;
+	padding: 15px;
+	list-style: none;
+	background-color: blue;
+	-webkit-animation: add 1s cubic-bezier(.17,.67,.79,.68), hide 1s 2s;
+}
+  
+@-webkit-keyframes add {
+  from {
+  	-webkit-transform: scale(0);
+  	-webkit-transform: skewX(15deg);
+  	margin-bottom: 1100px;  	
+    opacity: 0;
+	} 
+
+  to {
+   	-webkit-transform: scale(1);
+   	-webkit-transform: skewX(0);
+    opacity: 1;
+     } 
+}
+
+
+@-webkit-keyframes hide {
+	from {
+	opacity: 1; 
+	} 
+	to {  
+		opacity: 0; 
+	}
+}

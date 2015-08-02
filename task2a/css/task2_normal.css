@@ -1,0 +1,365 @@
+.wrapper
+{
+  display: flex;
+  flex-flow:column;
+  width: 100%;  
+}
+
+nav
+{ 
+  background-color: #2f2f32;
+  padding: 20px;
+}
+
+nav p 
+{display: none;}
+
+.nav-trigger
+{
+  display: none;
+}
+
+.nav-trigger
+{ display: none;}
+
+ul.navigation 
+{
+  display: flex;
+  flex-direction:row;
+}
+
+ul.navigation li a 
+{
+  display: block;
+  padding: 20px;  
+}
+
+ ul.navigation li a:hover
+{
+  background-color: gray;
+  color: black;
+}
+
+header
+{
+  background-color: #00849e;
+  height: 500px;
+  display: flex;
+}
+
+
+header .name
+{
+  flex:0 1 700px;
+  max-height: 150px;
+  margin: 100px 0 0 60px;
+}
+
+header .title
+{
+  font-size: 70px;
+  color: white;
+}
+
+header .link
+{
+  font-size: 30px;
+  color: white;
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+header span
+{ color: white;
+  float: right;
+  margin-right: 35px;
+  margin-top: -15px;
+}
+
+section
+{
+  background-color: #1c1621;
+  height: 230px;
+  display: flex;
+}
+
+section .section1
+{
+  background-color: #1c1621;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  flex:3 auto;
+}
+
+section .section2
+{
+  background-color: #b72d7e;
+  flex:2 auto;
+  position: relative;
+  min-width: 170px;
+}
+
+.section1 p
+{  
+  color:white;
+  opacity: 0.5;
+  font-size: 40px;
+
+  
+}
+
+.section2 a
+{ 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -6px;
+  color: white;  
+}
+
+main 
+{ 
+  display: flex;
+  flex-direction:row;
+  flex: 1 auto;
+}
+
+.slide1 
+{ 
+  flex:1 auto;
+  min-width: 33.3%;  
+  background-color: #560a97;
+  position: relative;
+}
+
+.imageContainer {
+	flex: 1 auto;
+}
+
+.slide1  a
+{ 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -6px;
+  color: white;  
+}
+ 
+img 
+{
+   width: 100%;
+}
+
+
+article 
+{ 
+  display: flex;
+  flex-direction:column;
+  background-color: #ededee;
+  
+}
+
+article .nameofsite
+{
+  
+  color: #00849e;
+  margin: 30px;
+  font-size: 30px;
+}
+
+article .text
+{
+  padding: 10px 10px 0 30px;
+  text-align:justify;   
+  -webkit-column-gap: 30px;
+  -webkit-column-count: 2;
+  margin: 5px 0 50px 0;
+
+}
+
+.text p 
+{
+  padding-top: 5px;
+  color: gray;
+}
+
+a 
+{ text-decoration: none;
+  color: white;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+
+@media (max-width: 980px){
+
+  header
+  {height: 380px;  }
+
+  header span
+  { margin-right: -15px 50px 0 0 ;}
+
+  .name .title
+  { font-size: 50px;}
+
+  .name .link 
+  {font-size:25px; }
+
+  .section1 p 
+  {font-size: 30px;}  
+
+
+
+}
+
+@media (max-width: 770px){
+  header span
+  { margin-right: -15px 50px 0 0 ;}
+  
+  .name .title 
+  { font-size: 48px;}
+
+  .name .link 
+  {font-size:20px; }
+
+   .section1 p 
+  {font-size: 25px;}  
+  
+ }
+
+
+ @media (max-width: 640px){
+   
+
+  header
+  {max-height: 300px;  }
+
+  .name .title
+  { font-size: 30px;}
+
+  .name .link 
+  {font-size: 20px; }
+
+   section
+  {max-height: 150px;}
+
+  .section1 p
+  { 
+  	font-size: 15px;
+  }
+
+  section .section2
+  { min-width: 100px;	
+    padding: 5px;
+  }
+
+  main 
+  { 
+  	display: flex;
+    flex-direction:column;
+  }
+
+  .slide1
+  {min-height: 300px;}
+
+
+  article .text
+  {
+   padding: 5px 0 0 5px;
+   text-align:justify;   
+  -webkit-column-gap: 30px;
+  -webkit-column-count: 1;
+   margin-top: 5px;
+   letter-spacing: 1px;
+   font-size: 15px;
+  }
+
+  nav p 
+  {display: block;
+   color: white;
+   font-size: 20px;
+ }
+
+  .nav-link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-trigger {
+     display: block;
+     position: fixed;
+     clip: rect(0, 0, 0, 0);
+
+    }
+
+  label[for="nav-trigger"] {
+      float: right;
+      margin: -30px 10px 0 0;
+      width: 30px;
+      height: 30px;      
+      cursor: pointer;
+      background-image: url("../pictures/icon.svg");
+      background-size: contain;
+
+  }
+
+ul.navigation li {
+    display: block;
+    background-color: #2f2f32;;
+}
+
+ul.navigation {
+      display: none;
+      max-height: 100px;
+      position: absolute;
+      top:60px;           
+      z-index: 2;      
+      transition: .2s;
+      background-color: white;
+  }
+
+  ul.navigation li a 
+  {  padding: 10px;}
+
+  .nav-trigger:checked ~ .navigation {
+      right: 0;
+      transition: right .2s;
+      display: block;
+  }
+}
+
+@media (max-width: 320px){
+
+  .navigation
+  {max-height: 50px;} 
+
+  header
+  { max-height:200px; }
+
+  header .title
+  { font-size: 20px;}  
+
+  header .name 
+  { margin: 50px 0 0 10px;}
+
+  main 
+  { 
+  	display: flex;
+    flex-direction:column;
+  }
+
+  section .section1  {
+  	padding-left: 10px;	
+  }
+
+  article .text
+  {
+  	padding: 5px 0 0 15px;  
+  } 
+
+}
+
+
+
+
